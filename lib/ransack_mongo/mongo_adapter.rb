@@ -19,7 +19,7 @@ module RansackMongo
     end
     
     def not_cont_matcher(attr, value)
-      @query[attr] = { '$ne' => /#{value}/i }
+      @query[attr] = { '$not' => /#{value}/i }
     end
 
     def cont_matcher(attr, value)
