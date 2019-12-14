@@ -1,6 +1,6 @@
 module RansackMongo
   class MongoAdapter
-    PREDICATES = %w[eq not_eq cont in start mstart gt lt gteq lteq]
+    PREDICATES = %w[eq not_eq not_cont cont in start mstart gt lt gteq lteq]
 
     def initialize
       @query = {}
